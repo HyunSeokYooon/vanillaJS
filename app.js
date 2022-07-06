@@ -73,7 +73,7 @@ plus(8,60);
 divide(98,20);
 
 
-// Create object in function
+//Create object in function
 const player2 = {
     name: "hyeonseok",
     sayHello: function(otherPersonName){
@@ -83,3 +83,39 @@ const player2 = {
 
 player2.sayHello("hyeonseok");
 player2.sayHello("mejoung");
+
+
+//return
+const age = 69;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
+}
+const krAge = calculateKrAge(age);
+console.log(krAge);
+
+
+//Create Calc Full
+const calculator = {
+    add: function(firstNumber, secondNumber){
+        return firstNumber + secondNumber;
+    },
+    subtract: function(firstNumber, secondNumber){
+        return firstNumber - secondNumber;
+    },
+    multiply: function(firstNumber, secondNumber){
+        return firstNumber * secondNumber;
+    },
+    divide: function(firstNumber, secondNumber){
+        return firstNumber / secondNumber;
+    },
+}
+
+const addResult = calculator.add(3,5);
+const subtractResult = calculator.subtract(3,5);
+const multiplyResult = calculator.multiply(3,5);
+const divideResult = calculator.divide(10,5);
+
+console.log(addResult);
+console.log(subtractResult);
+console.log(multiplyResult);
+console.log(divideResult);
